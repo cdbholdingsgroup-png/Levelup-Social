@@ -15,7 +15,7 @@ XF = 0.5
 
 def hold(s):
     words = len(json.dumps(s).split())
-    return 4.0 if s["type"] == "cta" else min(7.0, max(4.5, 3.0 + words / 9))
+    return 4.5 if s["type"] == "cta" else min(9.0, max(5.0, 3.5 + words / 6))
 
 
 def main(week_path, day, track, lift=None):

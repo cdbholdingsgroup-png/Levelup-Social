@@ -11,3 +11,5 @@ Words are set by Eric. Any draft is a proposal for his review, never final copy.
 7. "Sis" / "Bro" only when natural, not in every post.
 8. Short slides. One line of dialogue per slide.
 9. Book quotes are word for word from the manuscripts, labeled with the day.
+10. Slides: few words per slide (aim 12–25). If a line runs long, split it across two slides rather than shrinking the text.
+11. Video pacing: give every slide enough time to read comfortably (minimum 5 seconds, longer slides up to 9).
