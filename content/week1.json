@@ -1,0 +1,79 @@
+{
+  "week": "2026-W41",
+  "campaign_line": "Your next 100 days don't have to look like your last 100.",
+  "posts": [
+    {
+      "day": 1, "date": "2026-10-09", "book": "queen", "format": "Real Talk",
+      "slides": [
+        {"type": "hook", "label": "Real talk", "text": "Sis, you ever sit in your car outside your own house because you're not ready for what everybody needs from you?"},
+        {"type": "hook", "label": "Hear this", "text": "Being strong was never supposed to mean you never get to rest."},
+        {"type": "cta", "book": "queen", "line": "Level Up, Queen. 100 days of faith, healing, and becoming.", "sub": "Link in bio"}
+      ],
+      "caption": "Who else sits in the car a little longer? Tag the woman who holds everybody up. 🚗👑\n\n#levelupqueen #realtalk #strongwoman #singlemom #faith #selfworth"
+    },
+    {
+      "day": 2, "date": "2026-10-10", "book": "king", "format": "Real Talk",
+      "slides": [
+        {"type": "hook", "label": "Real talk", "text": "Bro, everybody calls you when something goes wrong. Who calls just to see if you're alright?"},
+        {"type": "hook", "label": "Hear this", "text": "Carrying everybody doesn't mean you can't admit you're tired."},
+        {"type": "cta", "book": "king", "line": "Level Up, King. 100 days of faith, discipline, and purpose.", "sub": "Link in bio"}
+      ],
+      "caption": "Check on your strong friend. Tag the man who never says he's tired. 💪🏾\n\n#levelupking #realtalk #mentalhealthformen #brotherhood #faith #provider"
+    },
+    {
+      "day": 3, "date": "2026-10-11", "book": "bundle", "format": "Who's Right?",
+      "slides": [
+        {"type": "hook", "label": "Who's right?", "text": "He's $400 short on rent. She's tired of covering him. But last year, when she lost her job, he paid everything."},
+        {"type": "side", "who": "her", "text": "I can't keep being the backup plan."},
+        {"type": "side", "who": "him", "text": "When you needed me, I didn't keep score."},
+        {"type": "question", "text": "Is she wrong for being frustrated, or is he wrong for expecting the same grace?", "prompt": "Comment KING or QUEEN"},
+        {"type": "cta", "book": "bundle", "line": "Two sides. Same struggle. Level Up, King & Level Up, Queen.", "sub": "Link in bio"}
+      ],
+      "caption": "Be honest. Who's right here? Comment KING or QUEEN 👇🏾\n\n#whosright #relationships #couplegoals #rent #levelupking #levelupqueen"
+    },
+    {
+      "day": 4, "date": "2026-10-12", "book": "queen", "format": "Text Thread",
+      "slides": [
+        {"type": "hook", "label": "Real talk", "text": "She typed three paragraphs explaining why she was hurt. He replied with one letter."},
+        {"type": "thread", "title": "Him", "messages": [
+          ["her", "I'm not trying to argue. I just need you to understand that when you cancel last minute, it makes me feel like I'm not a priority."],
+          ["her", "I've been patient. I've been understanding. I just want the same effort I give you."],
+          ["her", "Can you at least tell me you hear me?"],
+          ["him", "K"]
+        ], "footer": "Read 11:48 PM"},
+        {"type": "hook", "label": "Hear this", "text": "There's a difference between expressing your feelings and begging to be heard."},
+        {"type": "question", "label": "You decide", "text": "Would you respond again, or leave it right there?", "prompt": "Tell me in the comments"},
+        {"type": "cta", "book": "queen", "line": "Level Up, Queen. For the woman who's done explaining her worth.", "sub": "Link in bio"}
+      ],
+      "caption": "Three paragraphs vs. one letter. What do you do next? 😮‍💨\n\n#levelupqueen #relationships #boundaries #selfworth #realtalk #datingadvice"
+    },
+    {
+      "day": 5, "date": "2026-10-13", "book": "king", "format": "Level Up Challenge",
+      "slides": [
+        {"type": "hook", "label": "Real talk", "text": "Bro, remember what you promised yourself back in January? It's October. Be real with yourself. What happened?"},
+        {"type": "hook", "label": "Level Up Challenge", "text": "No shame. Pick one promise. Do one thing toward it today. Comment DONE when you do."},
+        {"type": "cta", "book": "king", "line": "Level Up, King. 100 days. One day at a time.", "sub": "Link in bio"}
+      ],
+      "caption": "Not next Monday. Today. Comment DONE when you take the step. 🏁\n\n#levelupking #discipline #mindset #goals #faith #accountability"
+    },
+    {
+      "day": 6, "date": "2026-10-14", "book": "bundle", "format": "One Page That Hit Different",
+      "needs_book_passage": true,
+      "slides": [
+        {"type": "hook", "label": "Real talk", "text": "The rent's behind. There's a notice on the door. Your phone keeps ringing. And somebody just told you to stay positive."},
+        {"type": "hook", "label": "Hear this", "text": "Faith doesn't mean pretending it isn't real. It means taking the next right step anyway."},
+        {"type": "cta", "book": "bundle", "line": "Level Up, King & Level Up, Queen. Faith for real life.", "sub": "Link in bio"}
+      ],
+      "caption": "Staying positive isn't a plan. The next right step is. 🙏🏾\n\n#levelupking #levelupqueen #faith #realtalk #hardtimes #keepgoing"
+    },
+    {
+      "day": 7, "date": "2026-10-15", "book": "bundle", "format": "Book Introduction",
+      "slides": [
+        {"type": "hook", "label": "100 days from now", "text": "You could still be having the same conversations, repeating the same habits, carrying the same hurt."},
+        {"type": "hook", "label": "Or", "text": "You could start doing something different today."},
+        {"type": "cta", "book": "bundle", "line": "Your next 100 days don't have to look like your last 100.", "sub": "Link in bio · Free guide too"}
+      ],
+      "caption": "Your next 100 days don't have to look like your last 100. Level Up, King & Level Up, Queen. Link in bio, plus a free 10-minute guide if you're not ready yet. 👑\n\n#levelupking #levelupqueen #100days #faith #newchapter #devotional"
+    }
+  ]
+}
