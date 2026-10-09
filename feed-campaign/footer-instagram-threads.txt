@@ -2,5 +2,4 @@
 TikTok: @levelupsouljourney
 Instagram & Threads: @levelup.souljourney
 Facebook: facebook.com/levelupsouljourney
-YouTube: @THE-RESET-100
-Note: Instagram/Threads turn '@THE-RESET-100' into a tag for @THE, so they use footer-instagram-threads.txt
+YouTube: The Reset (THE-RESET-100)
