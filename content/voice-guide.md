@@ -13,3 +13,4 @@ Words are set by Eric. Any draft is a proposal for his review, never final copy.
 9. Book quotes are word for word from the manuscripts, labeled with the day.
 10. Slides: few words per slide (aim 12–25). If a line runs long, split it across two slides rather than shrinking the text.
 11. Video pacing: give every slide enough time to read comfortably (minimum 5 seconds, longer slides up to 9).
+12. Every "Who's Right?" post is paired with the BUNDLE (King + Queen): bundle book-cover close on video, and bundle link in feed captions: levelup-souljourney.store/products/level-up-bundle-king-queen
