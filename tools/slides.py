@@ -147,7 +147,7 @@ def slide_side(s):
     color = HER if s["who"] == "her" else HIM
     f, lines, h = fit_text(d, "“" + s["text"] + "”", FP, W - 180, 900, start=92)
     y = (H - h) / 2
-    label(d, "Her side" if s["who"] == "her" else "His side", y - 150, color)
+    label(d, s.get("label") or ("Her" if s["who"] == "her" else "Him"), y - 150, color)
     center_block(d, lines, f, y, WHITE)
     return img
 
@@ -156,10 +156,11 @@ def slide_question(s):
     img, d = base()
     f, lines, h = fit_text(d, s["text"], FB, W - 160, 900, start=80)
     y = (H - h) / 2 - 80
-    label(d, s.get("label", "You decide"), y - 150)
+    if s.get("label"):
+        label(d, s["label"], y - 150)
     y = center_block(d, lines, f, y, WHITE)
-    f2 = font(FS, 42)
-    center_block(d, [s.get("prompt", "Comment KING or QUEEN")], f2, y + 70, GOLD)
+    if s.get("prompt"):
+        center_block(d, [s["prompt"]], font(FS, 42), y + 70, GOLD)
     return img
 
 
