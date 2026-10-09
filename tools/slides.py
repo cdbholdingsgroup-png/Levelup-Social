@@ -97,13 +97,48 @@ def label(d, text, y, color=GOLD):
     d.line([(W / 2 - 60, y + 72), (W / 2 + 60, y + 72)], fill=color, width=4)
 
 
+def photo_base(path):
+    """Full-bleed photo, cover-cropped to 9:16, darkened toward the bottom for text."""
+    im = Image.open(os.path.join(ROOT, path)).convert("RGB")
+    r = max(W / im.width, H / im.height)
+    im = im.resize((int(im.width * r) + 1, int(im.height * r) + 1))
+    x = (im.width - W) // 2
+    im = im.crop((x, 0, x + W, H))
+    shade = Image.new("L", (W, H))
+    sd = ImageDraw.Draw(shade)
+    for y in range(H):  # 35% at top -> 88% at bottom
+        sd.line([(0, y), (W, y)], fill=int(255 * (0.35 + 0.53 * (y / H))))
+    im = Image.composite(Image.new("RGB", (W, H), (10, 8, 12)), im, shade)
+    d = ImageDraw.Draw(im)
+    f = font(FS, 30)
+    w = d.textlength(HANDLE, font=f)
+    d.text(((W - w) / 2, H - 120), HANDLE, font=f, fill=GREY)
+    return im, d
+
+
 def slide_hook(s):
-    img, d = base()
-    f, lines, h = fit_text(d, s["text"], FB, W - 160, 1000, start=84)
-    y = (H - h) / 2
+    if s.get("photo"):
+        img, d = photo_base(s["photo"])
+        f, lines, h = fit_text(d, s["text"], FB, W - 140, 760, start=80)
+        y = H - 300 - h  # text sits in lower half over the dark part
+    else:
+        img, d = base()
+        f, lines, h = fit_text(d, s["text"], FB, W - 160, 1000, start=84)
+        y = (H - h) / 2
     if s.get("label"):
         label(d, s["label"], y - 150)
     center_block(d, lines, f, y, WHITE)
+    return img
+
+
+def slide_quote(s):
+    """A real line from the book, with its source."""
+    img, d = base()
+    f, lines, h = fit_text(d, "“" + s["text"] + "”", FP, W - 170, 1000, start=84)
+    y = (H - h) / 2
+    label(d, s.get("label", "From the book"), y - 150)
+    y = center_block(d, lines, f, y, WHITE)
+    center_block(d, [s["source"]], font(FS, 38), y + 50, GOLD)
     return img
 
 
@@ -180,7 +215,7 @@ def slide_cta(s):
     return img
 
 
-RENDER = {"hook": slide_hook, "side": slide_side, "question": slide_question,
+RENDER = {"hook": slide_hook, "quote": slide_quote, "side": slide_side, "question": slide_question,
           "thread": slide_thread, "cta": slide_cta}
 
 
