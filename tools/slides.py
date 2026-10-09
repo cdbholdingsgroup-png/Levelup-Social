@@ -220,6 +220,12 @@ def slide_cta(s):
         img.paste(c, ((W - c.width) // 2, 240))
         top = 240 + 940
     d = ImageDraw.Draw(img)
+    if s.get("lines"):  # several lines, each [text, colour, size]
+        y = top + 60
+        for text, col, size in s["lines"]:
+            f2, l2, _ = fit_text(d, text, FB, W - 120, 400, start=size, minimum=34)
+            y = center_block(d, l2, f2, y, GOLD if col == "gold" else WHITE, spacing=1.2) + 22
+        return img
     f, lines, h = fit_text(d, s["line"], FB, W - 140, 340, start=72, minimum=52)
     y = center_block(d, lines, f, top + 70, WHITE)
     f2, l2, _ = fit_text(d, s.get("sub", "Link in bio"), FB, W - 120, 160, start=52, minimum=40)
@@ -233,3 +239,51 @@ RENDER = {"hook": slide_hook, "quote": slide_quote, "side": slide_side, "questio
 
 def render(s, out):
     RENDER[s["type"]](s).save(out, "JPEG", quality=90)
+
+
+def _layout_blocks(d, blocks, size, max_w):
+    f = font(FB, size); tag = font(FB, max(30, int(size * 0.55)))
+    out, h = [], 0
+    for i, b in enumerate(blocks):
+        if i:
+            out.append(("gap", size * 0.85)); h += size * 0.85
+        if b.get("who"):
+            out.append(("tag", b)); h += tag.size * 1.5
+        for para in b["text"].split("\n"):
+            for line in wrap_px(d, para, f, max_w):
+                out.append(("line", (line, b))); h += size * 1.22
+    return f, tag, out, h
+
+
+def slide_stack(s):
+    """Several blocks on one slide: narration and/or HER / HIM dialogue. Words verbatim."""
+    photo = s.get("photo")
+    img, d = photo_base(photo, s.get("focus", 0.5)) if photo else base()
+    top = 240 if s.get("label") else 140
+    bottom = H - 200
+    size = s.get("size", 76)
+    while True:
+        f, tag, lines, h = _layout_blocks(d, s["blocks"], size, W - 150)
+        if h <= bottom - top or size <= 38:
+            break
+        size -= 2
+    if s.get("label"):
+        label(d, s["label"], 110, tuple(s["label_color"]) if s.get("label_color") else GOLD)
+    y = bottom - h if photo else top + (bottom - top - h) / 2
+    for kind, p in lines:
+        if kind == "gap":
+            y += p
+        elif kind == "tag":
+            col = HER if p["who"] == "her" else HIM
+            t = "HER" if p["who"] == "her" else "HIM"
+            d.text(((W - d.textlength(t, font=tag)) / 2, y), t, font=tag, fill=col)
+            y += tag.size * 1.5
+        else:
+            line, b = p
+            col = tuple(b["color"]) if b.get("color") else WHITE
+            d.text(((W - d.textlength(line, font=f)) / 2, y), line, font=f, fill=col)
+            y += size * 1.22
+    return img
+
+
+RENDER["stack"] = slide_stack

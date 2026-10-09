@@ -1,0 +1,42 @@
+{
+  "week": "episodes/whos-right-club",
+  "status": "words by Eric 2026-10-09",
+  "posts": [
+    {
+      "day": 1, "book": "bundle", "format": "Who's Right? King or Queen",
+      "slides": [
+        {"type": "stack", "label": "Who's Right? King or Queen", "photo": "library/gen_club_open.png", "blocks": [
+          {"text": "He Met Her at the Club", "color": [214,176,92]},
+          {"text": "They've been dating for six months.\nHe just found out she's an exotic dancer.\nShe never lied about what she does. He never asked.\nAnd here's the thing...\nThey met at the club where she works."}
+        ]},
+        {"type": "stack", "label": "Her Side", "label_color": [226,132,150], "blocks": [
+          {"text": "\"Hold on. You loved that I have my own apartment, my own car, and my bills paid.\nYou loved that I don't need you for a dime.\nBut now that you know how I pay for all that, suddenly I'm not girlfriend material?\""}
+        ]},
+        {"type": "stack", "label": "His Side", "label_color": [110,160,226], "blocks": [
+          {"text": "\"I'm not calling you a bad woman.\nBut I'm allowed to have a boundary.\nI want a real future with you, but I don't know if I can handle other men watching you like that every weekend.\nI'm not trying to control you. I'm telling you what I'm comfortable with.\""}
+        ]},
+        {"type": "stack", "label": "The Argument", "blocks": [
+          {"who": "her", "text": "\"So you trust me, but you don't trust my job? That makes no sense.\""},
+          {"who": "him", "text": "\"It's not about trust. It's about peace of mind. I'm allowed to care about what my woman does for work.\""},
+          {"who": "her", "text": "\"Then why weren't you stressing about it the night we met at the club?\""},
+          {"who": "him", "text": "\"Because I was looking for a good time that night, not a wife.\""}
+        ]},
+        {"type": "stack", "label": "The Twist", "blocks": [
+          {"who": "her", "text": "\"I have an exit strategy. This money is funding my own business. I'm out of the club in 12 months.\""},
+          {"who": "him", "text": "\"I respect your hustle, and I want you to win. But 12 months is a long time to deal with something I'm not comfortable with. I don't know if I can do it.\""}
+        ]},
+        {"type": "stack", "label": "The Question", "photo": "library/gen_club_end.png", "blocks": [
+          {"text": "He met her at the club.\nNow he wants a future with her.\nShe's building a business and says she's leaving in 12 months.\nShould he accept her career while she works toward that future?\nOr is he right to walk away if he can't handle it?"},
+          {"text": "WHO'S RIGHT — KING OR QUEEN?", "color": [214,176,92]}
+        ]},
+        {"type": "cta", "book": "bundle", "line": "", "lines": [
+          ["LEVEL UP, KING × LEVEL UP, QUEEN", "gold", 58],
+          ["Two perspectives. Real-life struggles.", "white", 48],
+          ["Your next 100 days don't have to look like your last 100.", "white", 52],
+          ["Link in bio.", "gold", 52]
+        ]}
+      ],
+      "caption": "He met her at the club. Now they're talking about a future together, and suddenly her job is a problem.\n\nShe's got a 12-month plan to leave and start her own business. He says he respects her hustle, but doesn't know if he can wait.\n\nHere's the question: Is he setting a boundary, or is he judging the same woman he pursued?\n\nAnd should she have to change her plans for a relationship?\n\nKING or QUEEN? Tell us why. 👀\n\n#LevelUpKing #LevelUpQueen #WhosRight #RelationshipTalk #RealLifeRelationships"
+    }
+  ]
+}
