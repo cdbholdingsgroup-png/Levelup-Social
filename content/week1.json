@@ -5,107 +5,356 @@
   "status": "words approved by Eric 2026-10-09",
   "posts": [
     {
-      "day": 1, "date": "2026-10-09", "book": "queen", "format": "Real Talk",
+      "day": 1,
+      "date": "2026-10-09",
+      "book": "queen",
+      "format": "Real Talk",
       "slides": [
-        {"type": "hook", "photo": "library/gen_D1_open_v2.png", "text": "Sis, you ever get home and just sit in the car? Like, I know everybody's inside, but give me a minute."},
-        {"type": "hook", "text": "You can see the lights on. You know somebody's hungry. Somebody needs help with homework. And you still gotta figure out dinner."},
-        {"type": "hook", "text": "Then your phone rings. \"Ma, where you at?\" Girl, I'm in the driveway."},
-        {"type": "hook", "text": "And now you feel bad because you don't even want to get out of the car."},
-        {"type": "quote", "label": "From the book", "text": "What would it feel like to rest without guilt?", "source": "Level Up, Queen · Day 41"},
-        {"type": "hook", "photo": "library/gen_D1_end.png", "text": "Maybe tonight the dishes can wait. Maybe you can sit down for a minute too."},
-        {"type": "question", "text": "Tell me something. When's the last time you got to come home and just… be?"},
-        {"type": "cta", "book": "queen", "line": "LEVEL UP, QUEEN. 100 Days of Faith, Healing, and Becoming.", "sub": "Link in bio"}
+        {
+          "type": "hook",
+          "photo": "library/gen_D1_car_a.png",
+          "text": "Sis, you ever get home and just sit in the car? Like, I know everybody's inside, but give me a minute.",
+          "focus": 0.7
+        },
+        {
+          "type": "hook",
+          "text": "You can see the lights on. You know somebody's hungry. Somebody needs help with homework. And you still gotta figure out dinner."
+        },
+        {
+          "type": "hook",
+          "text": "Then your phone rings. \"Ma, where you at?\" Girl, I'm in the driveway."
+        },
+        {
+          "type": "hook",
+          "text": "And now you feel bad because you don't even want to get out of the car."
+        },
+        {
+          "type": "quote",
+          "label": "From the book",
+          "text": "What would it feel like to rest without guilt?",
+          "source": "Level Up, Queen · Day 41"
+        },
+        {
+          "type": "hook",
+          "photo": "library/gen_D1_end.png",
+          "text": "Maybe tonight the dishes can wait. Maybe you can sit down for a minute too."
+        },
+        {
+          "type": "question",
+          "text": "Tell me something. When's the last time you got to come home and just… be?"
+        },
+        {
+          "type": "cta",
+          "book": "queen",
+          "line": "LEVEL UP, QUEEN. 100 Days of Faith, Healing, and Becoming.",
+          "sub": "Link in bio"
+        }
       ],
       "caption": "That little ten minutes in the driveway? Sometimes that's the only quiet you get all day. Who knows what I'm talking about?\n\n#LevelUpQueen #RealTalk #Motherhood #WomensWellness"
     },
     {
-      "day": 2, "date": "2026-10-10", "book": "king", "format": "Real Talk",
+      "day": 2,
+      "date": "2026-10-10",
+      "book": "king",
+      "format": "Real Talk",
       "slides": [
-        {"type": "hook", "photo": "library/gen_D2_open_v2.png", "text": "Bro, let me ask you something. When's the last time somebody called you and didn't need nothing?"},
-        {"type": "thread", "title": "Messages", "messages": [
-          ["him", "Bro, can you come look at my car?"],
-          ["him", "Can you let me hold a hundred?"],
-          ["him", "You think you can help me move Saturday?"]
-        ]},
-        {"type": "hook", "photo": "library/Rainy_Barbershop_Phone_Call.png", "text": "And you show up. Because that's what you do."},
-        {"type": "hook", "photo": "library/Create_a_cinematic_emotionally_2.jpeg", "text": "But last week you were going through something yourself. You looked at your phone and didn't even know who to call."},
-        {"type": "hook", "text": "You ever been the person everybody counts on, but you don't feel like you can count on anybody?"},
-        {"type": "hook", "photo": "library/gen_D2_end.png", "text": "You don't have to wait until everything falls apart to tell somebody you're having a hard time."},
-        {"type": "question", "text": "Bro, who can you actually call when you're not okay?"},
-        {"type": "cta", "book": "king", "line": "LEVEL UP, KING. 100 Days of Faith, Discipline, Purpose, and a Better You.", "sub": "Link in bio"}
+        {
+          "type": "hook",
+          "photo": "library/gen_D2_open_v2.png",
+          "text": "Bro, let me ask you something. When's the last time somebody called you and didn't need nothing?"
+        },
+        {
+          "type": "thread",
+          "title": "Messages",
+          "messages": [
+            [
+              "him",
+              "Bro, can you come look at my car?"
+            ],
+            [
+              "him",
+              "Can you let me hold a hundred?"
+            ],
+            [
+              "him",
+              "You think you can help me move Saturday?"
+            ]
+          ]
+        },
+        {
+          "type": "hook",
+          "photo": "library/gen_D2_fix_b.png",
+          "text": "And you show up. Because that's what you do."
+        },
+        {
+          "type": "hook",
+          "photo": "library/gen_D2_alone_a.png",
+          "text": "But last week you were going through something yourself. You looked at your phone and didn't even know who to call."
+        },
+        {
+          "type": "hook",
+          "text": "You ever been the person everybody counts on, but you don't feel like you can count on anybody?"
+        },
+        {
+          "type": "hook",
+          "photo": "library/gen_D2_end.png",
+          "text": "You don't have to wait until everything falls apart to tell somebody you're having a hard time."
+        },
+        {
+          "type": "question",
+          "text": "Bro, who can you actually call when you're not okay?"
+        },
+        {
+          "type": "cta",
+          "book": "king",
+          "line": "LEVEL UP, KING. 100 Days of Faith, Discipline, Purpose, and a Better You.",
+          "sub": "Link in bio"
+        }
       ],
       "caption": "Everybody's got that one person they call when things go wrong. But who's checking on that person?\n\n#LevelUpKing #RealTalk #MensWellness #Brotherhood"
     },
     {
-      "day": 3, "date": "2026-10-11", "book": "bundle", "format": "Who's Right?",
+      "day": 3,
+      "date": "2026-10-11",
+      "book": "bundle",
+      "format": "Who's Right?",
       "slides": [
-        {"type": "hook", "photo": "library/gen_D3_open_v2.png", "text": "Rent's due tomorrow. He's $400 short. Again. And she's had enough."},
-        {"type": "side", "who": "her", "text": "This is the third month, Marcus. Three months. I can't keep coming up with the difference."},
-        {"type": "side", "who": "him", "text": "Hold on. Last year when you lost your job, who paid everything? Did I ever throw that in your face?"},
-        {"type": "side", "who": "her", "text": "And I appreciated that. But how long am I supposed to keep doing this?"},
-        {"type": "side", "who": "him", "text": "I'm not asking you to carry me forever. I'm asking you to have my back right now."},
-        {"type": "hook", "photo": "library/21_Hidden_shopping_bag.png", "text": "She's tired of covering the rent. He remembers when he covered everything."},
-        {"type": "question", "text": "Be real. If this was your relationship, what would you say?"},
-        {"type": "cta", "book": "bundle", "line": "LEVEL UP, KING + LEVEL UP, QUEEN. Two perspectives. Real-life struggles.", "sub": "Link in bio"}
+        {
+          "type": "hook",
+          "photo": "library/gen_D3_open_v2.png",
+          "text": "Rent's due tomorrow. He's $400 short. Again. And she's had enough."
+        },
+        {
+          "type": "side",
+          "who": "her",
+          "text": "This is the third month, Marcus. Three months. I can't keep coming up with the difference."
+        },
+        {
+          "type": "side",
+          "who": "him",
+          "text": "Hold on. Last year when you lost your job, who paid everything? Did I ever throw that in your face?"
+        },
+        {
+          "type": "side",
+          "who": "her",
+          "text": "And I appreciated that. But how long am I supposed to keep doing this?"
+        },
+        {
+          "type": "side",
+          "who": "him",
+          "text": "I'm not asking you to carry me forever. I'm asking you to have my back right now."
+        },
+        {
+          "type": "hook",
+          "photo": "library/21_Hidden_shopping_bag.png",
+          "text": "She's tired of covering the rent. He remembers when he covered everything."
+        },
+        {
+          "type": "question",
+          "text": "Be real. If this was your relationship, what would you say?"
+        },
+        {
+          "type": "cta",
+          "book": "bundle",
+          "line": "LEVEL UP, KING + LEVEL UP, QUEEN. Two perspectives. Real-life struggles.",
+          "sub": "Link in bio"
+        }
       ],
       "caption": "She has a point. He has a point too. But somebody still has to come up with that $400 by tomorrow. What would you do?\n\n#WhosRight #LevelUpKing #LevelUpQueen #RelationshipTalk"
     },
     {
-      "day": 4, "date": "2026-10-12", "book": "queen", "format": "Text Thread",
+      "day": 4,
+      "date": "2026-10-12",
+      "book": "queen",
+      "format": "Text Thread",
       "slides": [
-        {"type": "hook", "photo": "library/gen_D4_open_v2.png", "text": "She sent him three messages about how she felt. Wanna know what he said?"},
-        {"type": "thread", "title": "Him", "messages": [
-          ["her", "So you just wasn't gonna tell me you weren't coming?"],
-          ["him", "I was busy."],
-          ["her", "I literally got dressed and sat here waiting. You could've called."],
-          ["her", "You know what, it's not even about tonight. You keep doing this."],
-          ["him", "K"]
-        ]},
-        {"type": "hook", "text": "She stared at that K for a good five minutes."},
-        {"type": "hook", "text": "Then started typing again. Deleted it. Started typing again."},
-        {"type": "quote", "label": "From the book", "text": "Intensity by itself does not prove love. Character is revealed through patterns.", "source": "Level Up, Queen · Day 27"},
-        {"type": "hook", "text": "Because what do you even say back to somebody who gives you one letter?"},
-        {"type": "question", "text": "Would you send another message? Or leave that K right where it's at?"},
-        {"type": "cta", "book": "queen", "line": "LEVEL UP, QUEEN. For the woman learning when enough is enough.", "sub": "Link in bio"}
+        {
+          "type": "hook",
+          "photo": "library/gen_D4_open_v2.png",
+          "text": "She sent him three messages about how she felt. Wanna know what he said?"
+        },
+        {
+          "type": "thread",
+          "title": "Him",
+          "messages": [
+            [
+              "her",
+              "So you just wasn't gonna tell me you weren't coming?"
+            ],
+            [
+              "him",
+              "I was busy."
+            ],
+            [
+              "her",
+              "I literally got dressed and sat here waiting. You could've called."
+            ],
+            [
+              "her",
+              "You know what, it's not even about tonight. You keep doing this."
+            ],
+            [
+              "him",
+              "K"
+            ]
+          ]
+        },
+        {
+          "type": "hook",
+          "text": "She stared at that K for a good five minutes."
+        },
+        {
+          "type": "hook",
+          "text": "Then started typing again. Deleted it. Started typing again."
+        },
+        {
+          "type": "quote",
+          "label": "From the book",
+          "text": "Intensity by itself does not prove love. Character is revealed through patterns.",
+          "source": "Level Up, Queen · Day 27"
+        },
+        {
+          "type": "hook",
+          "text": "Because what do you even say back to somebody who gives you one letter?"
+        },
+        {
+          "type": "question",
+          "text": "Would you send another message? Or leave that K right where it's at?"
+        },
+        {
+          "type": "cta",
+          "book": "queen",
+          "line": "LEVEL UP, QUEEN. For the woman learning when enough is enough.",
+          "sub": "Link in bio"
+        }
       ],
       "caption": "Not the 'K' after all that. 😭 What you doing next? Sending another message or putting that phone down?\n\n#LevelUpQueen #DatingTalk #Relationships #Boundaries"
     },
     {
-      "day": 5, "date": "2026-10-13", "book": "king", "format": "Level Up Challenge",
+      "day": 5,
+      "date": "2026-10-13",
+      "book": "king",
+      "format": "Level Up Challenge",
       "slides": [
-        {"type": "hook", "photo": "library/day_3_Laid-Off_Worker_Leaving_Plant.png", "text": "Bro, remember all that stuff you said you were gonna do back in January?"},
-        {"type": "hook", "photo": "library/Create_a_cinematic_emotionally_1.jpeg", "text": "Get your money right. Find a better job. Stop wasting time. You had a whole plan."},
-        {"type": "hook", "text": "Then February came. March came. Bills kept coming. Next thing you know, you're back doing the same stuff."},
-        {"type": "hook", "text": "It's October, bro. What happened to that plan?"},
-        {"type": "hook", "photo": "library/gen_D5_end.png", "text": "But listen. You don't have to fix the whole year today."},
-        {"type": "question", "text": "Remember that one thing you said you were gonna do? What's stopping you from taking care of the first part this week?"},
-        {"type": "cta", "book": "king", "line": "LEVEL UP, KING. 100 Days of Faith, Discipline, Purpose, and a Better You.", "sub": "Link in bio"}
+        {
+          "type": "hook",
+          "photo": "library/day_3_Laid-Off_Worker_Leaving_Plant.png",
+          "text": "Bro, remember all that stuff you said you were gonna do back in January?"
+        },
+        {
+          "type": "hook",
+          "photo": "library/Create_a_cinematic_emotionally_1.jpeg",
+          "text": "Get your money right. Find a better job. Stop wasting time. You had a whole plan."
+        },
+        {
+          "type": "hook",
+          "text": "Then February came. March came. Bills kept coming. Next thing you know, you're back doing the same stuff."
+        },
+        {
+          "type": "hook",
+          "text": "It's October, bro. What happened to that plan?"
+        },
+        {
+          "type": "hook",
+          "photo": "library/gen_D5_end.png",
+          "text": "But listen. You don't have to fix the whole year today."
+        },
+        {
+          "type": "question",
+          "text": "Remember that one thing you said you were gonna do? What's stopping you from taking care of the first part this week?"
+        },
+        {
+          "type": "cta",
+          "book": "king",
+          "line": "LEVEL UP, KING. 100 Days of Faith, Discipline, Purpose, and a Better You.",
+          "sub": "Link in bio"
+        }
       ],
       "caption": "January-you had some big plans. October-you still got time to make a move. What's ONE thing you keep putting off?\n\n#LevelUpKing #Discipline #RealTalk #Goals"
     },
     {
-      "day": 6, "date": "2026-10-14", "book": "bundle", "format": "One Page That Hit Different",
+      "day": 6,
+      "date": "2026-10-14",
+      "book": "bundle",
+      "format": "One Page That Hit Different",
       "slides": [
-        {"type": "hook", "photo": "library/43_Refrigerator_Food_Count.png", "text": "You ever been so behind on rent you don't even want to hear somebody knock on your door?"},
-        {"type": "hook", "photo": "library/Rainy_Barbershop_Phone_Call_2.png", "text": "You already called the landlord. You already checked your account. You know exactly how much you're short."},
-        {"type": "hook", "text": "Then somebody says, \"Just pray about it. God will work it out.\""},
-        {"type": "hook", "text": "And you believe in God. But right now you also need to know how you're gonna pay this rent."},
-        {"type": "quote", "label": "From the book", "text": "Consequences deserve honesty, not humiliation. Shame only adds another debt.", "source": "Level Up, Queen · Day 26"},
-        {"type": "hook", "photo": "library/gen_D6_end.png", "text": "You can have faith and still be scared. You can pray and still need some help."},
-        {"type": "hook", "text": "Sometimes the hardest thing is telling somebody, \"I'm in trouble. I need help figuring this out.\""},
-        {"type": "cta", "book": "bundle", "line": "LEVEL UP, KING + LEVEL UP, QUEEN. Faith for real life.", "sub": "Link in bio"}
+        {
+          "type": "hook",
+          "photo": "library/43_Refrigerator_Food_Count.png",
+          "text": "You ever been so behind on rent you don't even want to hear somebody knock on your door?"
+        },
+        {
+          "type": "hook",
+          "photo": "library/Rainy_Barbershop_Phone_Call_2.png",
+          "text": "You already called the landlord. You already checked your account. You know exactly how much you're short."
+        },
+        {
+          "type": "hook",
+          "text": "Then somebody says, \"Just pray about it. God will work it out.\""
+        },
+        {
+          "type": "hook",
+          "text": "And you believe in God. But right now you also need to know how you're gonna pay this rent."
+        },
+        {
+          "type": "quote",
+          "label": "From the book",
+          "text": "Consequences deserve honesty, not humiliation. Shame only adds another debt.",
+          "source": "Level Up, Queen · Day 26"
+        },
+        {
+          "type": "hook",
+          "photo": "library/gen_D6_end.png",
+          "text": "You can have faith and still be scared. You can pray and still need some help."
+        },
+        {
+          "type": "hook",
+          "text": "Sometimes the hardest thing is telling somebody, \"I'm in trouble. I need help figuring this out.\""
+        },
+        {
+          "type": "cta",
+          "book": "bundle",
+          "line": "LEVEL UP, KING + LEVEL UP, QUEEN. Faith for real life.",
+          "sub": "Link in bio"
+        }
       ],
       "caption": "Sometimes you don't need somebody telling you to stay positive. You need somebody to listen and help you figure out what comes next. Faith and real life aren't separate.\n\n#LevelUpKing #LevelUpQueen #RealTalk #Faith"
     },
     {
-      "day": 7, "date": "2026-10-15", "book": "bundle", "format": "Book Introduction",
+      "day": 7,
+      "date": "2026-10-15",
+      "book": "bundle",
+      "format": "Book Introduction",
       "slides": [
-        {"type": "hook", "photo": "library/gen_D7_open_v2.png", "text": "Can I ask you something? How different is your life today from where you were 100 days ago?"},
-        {"type": "hook", "text": "Still arguing about the same stuff? Still telling yourself you're gonna get serious about your goals? Still trying to find some peace?"},
-        {"type": "hook", "photo": "library/ChatGPT_Image_Sep_9_2026_02_30_40_AM.png", "text": "That's why C.D. Barros wrote Level Up, King and Level Up, Queen. For people dealing with real life, not people who have everything figured out."},
-        {"type": "hook", "text": "These aren't books you have to sit down and finish in a weekend. You take one day at a time."},
-        {"type": "hook", "photo": "library/gen_D7_end.png", "text": "A little real talk. Some Scripture. A chance to check yourself. And something you can actually work on that day."},
-        {"type": "cta", "book": "bundle", "line": "Your next 100 days don't have to look like your last 100.", "sub": "LEVEL UP, KING + LEVEL UP, QUEEN · Link in bio"}
+        {
+          "type": "hook",
+          "photo": "library/gen_D7_open_v2.png",
+          "text": "Can I ask you something? How different is your life today from where you were 100 days ago?"
+        },
+        {
+          "type": "hook",
+          "text": "Still arguing about the same stuff? Still telling yourself you're gonna get serious about your goals? Still trying to find some peace?"
+        },
+        {
+          "type": "hook",
+          "photo": "library/ChatGPT_Image_Sep_9_2026_02_30_40_AM.png",
+          "text": "That's why C.D. Barros wrote Level Up, King and Level Up, Queen. For people dealing with real life, not people who have everything figured out."
+        },
+        {
+          "type": "hook",
+          "text": "These aren't books you have to sit down and finish in a weekend. You take one day at a time."
+        },
+        {
+          "type": "hook",
+          "photo": "library/gen_D7_end.png",
+          "text": "A little real talk. Some Scripture. A chance to check yourself. And something you can actually work on that day."
+        },
+        {
+          "type": "cta",
+          "book": "bundle",
+          "line": "Your next 100 days don't have to look like your last 100.",
+          "sub": "LEVEL UP, KING + LEVEL UP, QUEEN · Link in bio"
+        }
       ],
       "caption": "100 days. One day at a time. Real conversations, faith, and some things we all need to work on. Level Up, King and Level Up, Queen are available now. Not ready to buy? Start with the free Reset guide. Link in bio.\n\n#LevelUpKing #LevelUpQueen #100Days #Faith"
     }

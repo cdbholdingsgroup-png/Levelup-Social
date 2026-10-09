@@ -83,10 +83,14 @@ def base():
     glow = glow.filter(ImageFilter.GaussianBlur(160))
     img = Image.blend(img, glow, 0.9)
     d = ImageDraw.Draw(img)
-    f = font(FS, 30)
-    w = d.textlength(HANDLE, font=f)
-    d.text(((W - w) / 2, H - 120), HANDLE, font=f, fill=GREY)
+    mark(d)
     return img, d
+
+
+def mark(d):
+    f = font(FB, 36)
+    w = d.textlength(HANDLE, font=f)
+    d.text(((W - w) / 2, H - 130), HANDLE, font=f, fill=GOLD)
 
 
 def label(d, text, y, color=GOLD):
@@ -97,12 +101,16 @@ def label(d, text, y, color=GOLD):
     d.line([(W / 2 - 60, y + 72), (W / 2 + 60, y + 72)], fill=color, width=4)
 
 
-def photo_base(path):
-    """Full-bleed photo, cover-cropped to 9:16, darkened toward the bottom for text."""
+def photo_base(path, focus=0.5):
+    """Full-bleed photo, cover-cropped to 9:16, darkened toward the bottom for text.
+    focus = horizontal centre of the crop (0 left .. 1 right). Black letterbox bars are trimmed."""
     im = Image.open(os.path.join(ROOT, path)).convert("RGB")
+    box = im.convert("L").point(lambda v: 255 if v > 12 else 0).getbbox()
+    if box:
+        im = im.crop(box)
     r = max(W / im.width, H / im.height)
-    im = im.resize((int(im.width * r) + 1, int(im.height * r) + 1))
-    x = (im.width - W) // 2
+    im = im.resize((int(im.width * r) + 1, int(im.height * r) + 1), Image.LANCZOS)
+    x = min(max(int(im.width * focus - W / 2), 0), im.width - W)
     im = im.crop((x, 0, x + W, H))
     shade = Image.new("L", (W, H))
     sd = ImageDraw.Draw(shade)
@@ -110,15 +118,13 @@ def photo_base(path):
         sd.line([(0, y), (W, y)], fill=int(255 * (0.35 + 0.53 * (y / H))))
     im = Image.composite(Image.new("RGB", (W, H), (10, 8, 12)), im, shade)
     d = ImageDraw.Draw(im)
-    f = font(FS, 30)
-    w = d.textlength(HANDLE, font=f)
-    d.text(((W - w) / 2, H - 120), HANDLE, font=f, fill=GREY)
+    mark(d)
     return im, d
 
 
 def slide_hook(s):
     if s.get("photo"):
-        img, d = photo_base(s["photo"])
+        img, d = photo_base(s["photo"], s.get("focus", 0.5))
         f, lines, h = fit_text(d, s["text"], FB, W - 140, 760, start=80)
         y = H - 300 - h  # text sits in lower half over the dark part
     else:
@@ -145,7 +151,7 @@ def slide_quote(s):
 def slide_side(s):
     img, d = base()
     color = HER if s["who"] == "her" else HIM
-    f, lines, h = fit_text(d, "“" + s["text"] + "”", FP, W - 180, 900, start=92)
+    f, lines, h = fit_text(d, "“" + s["text"] + "”", FB, W - 160, 900, start=84)
     y = (H - h) / 2
     label(d, s.get("label") or ("Her" if s["who"] == "her" else "Him"), y - 150, color)
     center_block(d, lines, f, y, WHITE)
@@ -200,19 +206,24 @@ def slide_cta(s):
     img, d = base()
     book = s["book"]
     if book == "bundle":
-        k, q = _cover("king", 700), _cover("queen", 700)
-        total = k.width + q.width + 40
+        k, q = _cover("king", 760), _cover("queen", 760)
+        gap = 30
+        if k.width + q.width + gap > W - 60:
+            r = (W - 60 - gap) / (k.width + q.width)
+            k = k.resize((int(k.width * r), int(k.height * r))); q = q.resize((int(q.width * r), int(q.height * r)))
+        total = k.width + q.width + gap
         x = (W - total) // 2
-        img.paste(k, (x, 330)); img.paste(q, (x + k.width + 40, 330))
-        top = 330 + 700
+        img.paste(k, (x, 260)); img.paste(q, (x + k.width + gap, 260))
+        top = 260 + max(k.height, q.height)
     else:
-        c = _cover(book, 860)
-        img.paste(c, ((W - c.width) // 2, 300))
-        top = 300 + 860
+        c = _cover(book, 940)
+        img.paste(c, ((W - c.width) // 2, 240))
+        top = 240 + 940
     d = ImageDraw.Draw(img)
-    f, lines, h = fit_text(d, s["line"], FP, W - 160, 300, start=66, minimum=44)
+    f, lines, h = fit_text(d, s["line"], FB, W - 140, 340, start=72, minimum=52)
     y = center_block(d, lines, f, top + 70, WHITE)
-    center_block(d, [s.get("sub", "Link in bio")], font(FB, 44), y + 40, GOLD)
+    f2, l2, _ = fit_text(d, s.get("sub", "Link in bio"), FB, W - 120, 160, start=52, minimum=40)
+    center_block(d, l2, f2, y + 36, GOLD)
     return img
 
 
