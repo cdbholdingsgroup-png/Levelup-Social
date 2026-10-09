@@ -6,7 +6,7 @@ import json, os, subprocess, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LIFTS = {  # where each track picks up (seconds), measured from the audio
-    "Aylex - A Positive Direction.mp3": 85, "Lukrembo - Bread.mp3": 112, "Pufino - Revelations.mp3": 55, "Aylex - Glorious.mp3": 90, "Sunova - Heroes.mp3": 9,
+    "Aylex - A Positive Direction.mp3": 85, "Lukrembo - Bread.mp3": 112, "Pufino - Revelations.mp3": 55, "Sunova - Heroes.mp3": 9,
     "Pufino - Hopeful.mp3": 20, "Zambolino - First Days of Spring.mp3": 40, "Chill Pulse - Rise.mp3": 13,
 }
 XF = 0.5
